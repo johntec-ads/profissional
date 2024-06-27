@@ -9,12 +9,9 @@ function App () {
 
   /* Aqui atualizo o estado */
   function registro() {
-    setTarefas({...tarefas, input});/* Operador spread para juntar os valores
+    setTarefas([...tarefas, input]);/* Operador spread para juntar os valores
     do array e input para adicionar o novo valor */
     setInput('')
-
-
-
   }
 
 
@@ -23,17 +20,18 @@ function App () {
     <div>
       <h1> Cadastro de clientes </h1>
 
-      {/* simular um array e varrendo com o map */ }
+      {/* Varrendo com o map */ }
       <ul>
         {/* Chaves para JS */ }
         {/* Param para os itens e index para a key */}
+
         { tarefas.map( ( item, index ) => (
           <li key={ index }  > { item } </li>
         ) ) }
+        
       </ul>
 
-      <input  type='text' value={input} 
-      onChange={ (e) => setInput(e.target.value)} ></input>      
+      <input  type='text' value={input} onChange={ (e) => setInput(e.target.value)} ></input>      
 
       <button type='button' onClick={registro}  >Registro</button>
 
