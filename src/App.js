@@ -4,7 +4,12 @@ import React, { useState, useEffect } from 'react';
 /* Declarando component principal */
 function App () {
   /* Declarando os estados */
-  const [ tarefas, setTarefas ] = useState( [ '1', '2', '3' ] );/* Array and Function */
+  const [ tarefas, setTarefas ] = useState(() => {
+    const itensSalvos = localStorage.getItem('tarefas');
+    return itensSalvos ? JSON.parse( itensSalvos ) : [] ;
+  })
+
+
   const [ input, setInput ] = useState( '' )
 
   /* Aqui atualizo o estado */
@@ -14,6 +19,12 @@ function App () {
     setInput('')
   }
 
+  /* Unsado useEffects para ciclos de vida */
+  /* localStorage.setItem() */
+  useEffect(() => {
+    localStorage.setItem('tarefas', JSON.stringify(tarefas))
+
+  },[tarefas])//O primeiro param e a função, o segundo é a tarefa
 
   /* Area de rendetização */
   return (
@@ -26,7 +37,8 @@ function App () {
         {/* Param para os itens e index para a key */}
 
         { tarefas.map( ( item, index ) => (
-          <li key={ index }  > { item } </li>
+          <li key={ index }  > { item } <buton>x</buton> </li>
+          
         ) ) }
         
       </ul>
