@@ -46,12 +46,11 @@ function App () {
         {/* Param para os itens e index para a key */}
 
         { tarefas.map( ( item, index ) => (
-          <li key={ index }  > { item } 
-          <button className='botao' type='button' onClick={() => apagar (index) } >
-            x</button> </li>
+          <li key={ index }  > { item }          
+      
+          <button className='botao' type='button' onClick={() => apagar (index) } >x</button> </li>
           
-        ) ) }
-        
+        ) ) }        
       </ul>
 
       <input  type='text' value={input} onChange={ (e) => setInput(e.target.value)} ></input>      
