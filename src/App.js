@@ -19,6 +19,15 @@ function App () {
     setInput('')
   }
 
+  function apagar(index) {/* Seleciona se o index da novaLista
+    for igual ao index do parametro */
+    const novaLista = tarefas.filter((n, i) => i !== index );
+    /* Atualizo  array tarefas com a novaLista sem o item 
+    filtrado */
+    setTarefas(novaLista);
+    localStorage.setItem('tarefas', JSON.stringify(novaLista));    
+  }
+
   /* Unsado useEffects para ciclos de vida */
   /* localStorage.setItem() */
   useEffect(() => {
@@ -37,7 +46,9 @@ function App () {
         {/* Param para os itens e index para a key */}
 
         { tarefas.map( ( item, index ) => (
-          <li key={ index }  > { item } <buton>x</buton> </li>
+          <li key={ index }  > { item } 
+          <button className='botao' type='button' onClick={() => apagar (index) } >
+            x</button> </li>
           
         ) ) }
         
