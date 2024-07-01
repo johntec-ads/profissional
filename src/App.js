@@ -38,7 +38,7 @@ function App () {
   /* Area de rendetização */
   return (
     <div>
-      <h1> Cadastro de clientes </h1>
+      <h1> Lista de tarefas  </h1>
 
       {/* Varrendo com o map */ }
       <ul>
