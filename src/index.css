@@ -17,3 +17,15 @@ code {
 .container {
   display: flex;
 }
+.linha {
+  background-color: aquamarine;  
+}
+.botao{
+  background-color: aqua;
+  margin: 3px 3px 0 30px;
+ 
+  
+}
+.texto{
+  background-color: chartreuse;
+}
