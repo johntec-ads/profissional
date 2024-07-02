@@ -1,5 +1,6 @@
 /* import "react,useState,useEffect" */
 import React, { useState, useEffect } from 'react';
+import './style/style.css'
 
 /* Declarando component principal */
 function App () {
