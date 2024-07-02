@@ -2,7 +2,9 @@
   display: flex;
 }
 .linha {
-  background-color: aquamarine;  
+  
+  display: flex;
+  justify-content: space-between;
 }
 .botao{
   background-color: aqua;
@@ -14,11 +16,3 @@
   background-color: chartreuse;
 }
 
-/* background-color: #fff;
-  box-shadow: var(--box-shadow);
-  color: #333;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  padding: 10px;
-  margin: 10px 0; */

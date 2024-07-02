@@ -34,9 +34,9 @@ function App () {
   useEffect( () => {
     localStorage.setItem( 'tarefas', JSON.stringify( tarefas ) )
 
-  }, [ tarefas ] )//O primeiro param e a função, o segundo é a tarefa
+  }, [ tarefas ] )//O primeiro param é a função, o segundo é o estado tarefa
 
-  /* Area de rendetização */
+  /* Area de renderização */
   return (
     <div>
       <h1> Lista de tarefas  </h1>
@@ -48,9 +48,12 @@ function App () {
           {/* Param para os itens e index para a key */ }
 
           { tarefas.map( ( item, index ) => (
+            
             <li key={ index } className='linha'  > { item }
 
-              <button className='botao' type='button' onClick={ () => apagar( index ) } >x</button> </li>
+            <button className='botao' type='button' onClick={ () => apagar( index ) } >x</button>
+
+            </li>
 
           ) ) }
         </ul>
