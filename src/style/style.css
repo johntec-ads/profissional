@@ -1,10 +1,24 @@
+.titulo{
+  text-align: center;
+  
+}
+
+
 .container {
   display: flex;
+  border: 2px solid black;
+  margin: 30px;
+  
+  
 }
+
+
 .linha {
   
   display: flex;
   justify-content: space-between;
+  
+  
 }
 .botao{
   background-color: aqua;
@@ -13,6 +27,9 @@
   
 }
 .texto{
-  background-color: chartreuse;
+  margin-left: 30%;
+  
 }
+
+
 

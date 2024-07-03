@@ -39,7 +39,7 @@ function App () {
   /* Area de renderização */
   return (
     <div>
-      <h1> Lista de tarefas  </h1>
+      <h1 className='titulo' > Lista de tarefas  </h1>
 
       <div className='container'>
         {/* Varrendo com o map */ }
