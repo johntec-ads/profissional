@@ -1,12 +1,8 @@
-import {} from ' react-router-dom '
+import RoutesApp from './routes' ;
 
 function App () {
   return(
-    <div>
-      <h1>
-      Hello Worlds OK
-      </h1>
-    </div>
+    <RoutesApp/>
   )
 
 }
