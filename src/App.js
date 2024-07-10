@@ -1,9 +1,14 @@
 /* Importo o componente RoutesApp que criei */
-import RoutesApp from  './routers'
+
 
 function App () {
   return(
-   <RoutesApp/>
+    <div>
+      <h1>
+        Hello World
+      </h1>
+    </div>
+  
   )
 
 }
