@@ -1,8 +1,10 @@
-import RoutesApp from './routes' ;
+
 
 function App () {
   return(
-    <RoutesApp/>
+    <div>
+      Rotas...
+    </div>
   )
 
 }
