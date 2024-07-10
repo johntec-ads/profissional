@@ -1,10 +1,9 @@
-
+/* Importo o componente RoutesApp que criei */
+import RoutesApp from  './routers'
 
 function App () {
   return(
-    <div>
-      Rotas...
-    </div>
+   <RoutesApp/>
   )
 
 }
