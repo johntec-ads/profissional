@@ -1,14 +1,14 @@
 
 function Contatos () {
-  return(
+  return (
     <div>
-      <h1>
-        Hello World
-      </h1>
+
+      <h1>Página de contatos</h1>
+      
     </div>
-  
+
   )
 
 }
 
-export default Contatos ;
+export default Contatos;
