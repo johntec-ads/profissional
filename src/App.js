@@ -1,11 +1,9 @@
+import RouterApp from './routers'
 
-import RoutesApp from './routers';
-
-function App () {
-  return(    
-      <RoutesApp/>  
-  );
-
+function App ( ) {
+  return(
+    <RouterApp/>
+  )
 }
 
 export default App ;

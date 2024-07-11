@@ -1,14 +1,12 @@
+import { Link } from 'react-router-dom';
 
-function Contatos () {
-  return (
+ function Contatos ( ) {
+  return(
     <div>
-
-      <h1>Página de contatos</h1>
-      
+      <h1> Bem vindo aos Contatos </h1>
+      <Link to='/' >Home</Link>
     </div>
-
   )
-
 }
 
-export default Contatos;
+export default Contatos ;
