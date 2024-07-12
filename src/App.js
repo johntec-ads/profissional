@@ -1,10 +1,40 @@
-import RouterApp from './routers';
-
+import React, { useState, useEffect } from 'react';
 
 function App () {
+
+  /* Declarar useState */
+  const [nutri, setNutri] = useState([]);
+  
+  /* Declarar useEffect */  
+  useEffect(() => {
+    function loadApi() {
+      let url = 'programador.com/rn-api/?api=posts'/*Declarando API para á variável */
+      fetch(url)/* Obtendo API */
+      .then((r) => r.json())/* Converte json para objeto JS */
+      .then((param) => {
+        console.log(param)/* Imprimindo api no console */
+        setNutri(param)/* Atualizando o state 'nutri' com a api */
+
+      })
+
+    }
+
+    /* Instanciar a function */
+    loadApi();
+
+  }, []);
+
+
+
   return (
-    <RouterApp />
+   <div>
+      <h1>
+      TESTE RENDE
+      </h1>
+   </div>
   )
 }
 
 export default App;
+
+/* 'https://sujeitoprogramador.com/rn-api/?api=posts' */
