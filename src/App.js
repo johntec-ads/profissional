@@ -4,34 +4,43 @@ import React, { useState, useEffect } from 'react';
 function App () {
 
   /* Declarar useState */
-  const [nutri, setNutri] = useState([]);
-  
-  /* Declarar useEffect */  
-  useEffect(() => {
-    function loadApi() {
-      let url =  'https://sujeitoprogramador.com/rn-api/?api=posts'/*Declarando API para á variável */
-      fetch(url)/* Obtendo API */
-      .then((r) => r.json())/* Converte json para objeto JS */
-      .then((param) => {
-        console.log(param)/* Imprimindo api no console */
-        setNutri(param)/* Atualizando o state 'nutri' com a api */
+  const [ nutri, setNutri ] = useState( [] );
 
-      })
+  /* Declarar useEffect */
+  useEffect( () => {
+    function loadApi () {
+      let url = 'https://sujeitoprogramador.com/rn-api/?api=posts'/*Declarando API para á variável */
+      fetch( url )/* Obtendo API */
+        .then( ( r ) => r.json() )/* Converte json para objeto JS */
+        .then( ( param ) => {
+          console.log( param )/* Imprimindo api no console */
+          setNutri( param )/* Atualizando o state 'nutri' com a api */
+
+        } )
 
     }
 
     /* Instanciar a function */
     loadApi();
 
-  }, []);
+  }, [] );
 
 
 
   return (
-   <div>
-    
-
-   </div>
+    <div>
+      { nutri.map( ( item ) => {
+        return (
+          <article key={ item.id } className='post' >
+            <h3 className='categoria'> { item.categoria } </h3>
+            <strong className='titulo' > {item.titulo} </strong>
+            <img src={ item.capa } className='capa' alt={ item.titulo } />
+            <p className='subtitulo'> { item.subtitulo } </p>          
+          
+          </article>
+        )
+      } ) }
+    </div>
   )
 }
 
