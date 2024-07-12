@@ -29,9 +29,8 @@ function App () {
 
   return (
    <div>
-      <h1>
-      TESTE RENDE
-      </h1>
+    
+
    </div>
   )
 }
