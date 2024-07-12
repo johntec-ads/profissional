@@ -1,3 +1,4 @@
+/* importando os Hooks useState e useEffect */
 import React, { useState, useEffect } from 'react';
 
 function App () {
@@ -8,7 +9,7 @@ function App () {
   /* Declarar useEffect */  
   useEffect(() => {
     function loadApi() {
-      let url = 'programador.com/rn-api/?api=posts'/*Declarando API para á variável */
+      let url =  'https://sujeitoprogramador.com/rn-api/?api=posts'/*Declarando API para á variável */
       fetch(url)/* Obtendo API */
       .then((r) => r.json())/* Converte json para objeto JS */
       .then((param) => {
