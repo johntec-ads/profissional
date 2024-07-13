@@ -6,8 +6,8 @@ function Sobre( ) {
   return(
     <div>
       <h1>Sobre</h1>
-      <Link to='/' >Home</Link> <br/>
-      <Link to='/contatos' >Contatos</Link>
+      <Link to='/contatos' >Contatos</Link><br/>
+      <Link to='/' >Home</Link> 
     </div>
   )
 }

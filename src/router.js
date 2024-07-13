@@ -1,21 +1,21 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom' ;
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Contatos from './pages/Contatos';
-import Header from './componets/Header/header';
+import Header from './components/header'
 
 
-function RoutesApp()  {
-  return(
+function RoutesApp () {
+  return (
     <BrowserRouter>
-        <Header/>
+      <Header/>
       <Routes>
-        <Route path='/'         element={ <Home/> } />
-        <Route path='/sobre'    element={ <Sobre/> } />
-        <Route path='/contatos' element={ <Contatos/> } />
+        <Route path='/' element={ <Home /> } />
+        <Route path='/sobre' element={ <Sobre /> } />
+        <Route path='/contatos' element={ <Contatos /> } />
       </Routes>
     </BrowserRouter>
   )
 }
 
-export default RoutesApp ;
+export default RoutesApp;
