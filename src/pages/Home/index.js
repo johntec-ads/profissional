@@ -5,7 +5,7 @@ function Home( ) {
 
   return(
     <div>
-      <h2>Home</h2>
+      <h1>Home</h1>
       <Link to='/sobre' >Sobre</Link> <br/>
       <Link to='/contatos'>Contatos</Link>
     </div>
