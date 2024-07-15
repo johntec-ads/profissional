@@ -1,6 +1,7 @@
 import React from 'react';
 /* importando o componente Link */
 import { Link } from 'react-router-dom';
+import './style.css'
 
 function Header () {
   return (

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function Sobre( ) {
 
   return(
-    <div>
+    <div className='links' >
       <h1>Sobre</h1>
       <Link to='/contatos' >Contatos</Link><br/>
       <Link to='/' >Home</Link> 
