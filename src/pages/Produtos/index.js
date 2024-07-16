@@ -2,11 +2,11 @@ import { useParams } from 'react-router-dom'
 
 function Produto() {
 
-  let { id } = useParams()
+const {id} = useParams()
 
   return(
     <div>
-      Produto 123
+      Detalhe do produto {id}
     </div>
   )
 }
