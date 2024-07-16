@@ -1,21 +1,15 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react router dom';
 
 function Produto () {
 
-  const { id } = useParams()
+  const { id } = useParams();
 
-  return (
+  return(
     <div>
-      <h2>
-        Detalhe do produto
-      </h2>
-      
-      <h1>
-        { id }
-      </h1>
-
+      <h1>Descrição do produto</h1>
+      <h2> { id } </h2>
     </div>
   )
 }
 
-export default Produto;
+export default Produto ;
