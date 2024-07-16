@@ -8,9 +8,9 @@ function Home( ) {
       <h1>Home</h1>
       <Link to='/sobre' >Sobre</Link> <br/>
       <Link to='/contatos'>Contatos</Link>
-      <br/>
+      <br/>     
       <hr/>
-      <Link to='/produto/12345' >Acessar produto 12345</Link>
+      <Link>Descrição do produto</Link>
      
     </div>
   )

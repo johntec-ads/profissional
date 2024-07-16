@@ -2,17 +2,13 @@ import { useParams } from 'react-router-dom'
 
 function Produto() {
 
-  const { id } = useParams()
+  let { id } = useParams()
 
   return(
     <div>
-      <h1> Página detalhe do produto </h1>
-      <span>
-        MEU PRODUTO É { id }
-      </span>
-
+      Produto 123
     </div>
   )
 }
 
-export default Produto ;
+export default Produto;
