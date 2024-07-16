@@ -4,7 +4,8 @@ import Sobre from './pages/Sobre';
 import Contatos from './pages/Contatos';
 import Header from './components/header';
 import Erro from './pages/Erro';
-import Produto from './pages/Produto';
+import Produto from './pages/Produtos';
+
 
 
 function RoutesApp () {
@@ -15,8 +16,8 @@ function RoutesApp () {
         <Route path='/' element={ <Home /> } />
         <Route path='/sobre' element={ <Sobre /> } />
         <Route path='/contatos' element={ <Contatos /> }/>
-        <Route path='produto' element={<Produto/>} />
-
+        <Route path='/produto/:id' element={ <Produto/> } />
+       
 
         <Route path='*'  element={ <Erro/> } />     
       </Routes>
