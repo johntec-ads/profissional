@@ -1,12 +1,19 @@
 import { useParams } from 'react-router-dom'
 
-function Produto() {
+function Produto () {
 
-const {id} = useParams()
+  const { id } = useParams()
 
-  return(
+  return (
     <div>
-      Detalhe do produto {id}
+      <h2>
+        Detalhe do produto
+      </h2>
+      
+      <h1>
+        { id }
+      </h1>
+
     </div>
   )
 }

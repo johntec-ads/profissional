@@ -12,9 +12,9 @@ function Header () {
       {/* atribuir os links */ }
       <div className='menu'>
 
-        <Link to='/' >Home</Link>
-        <Link to='/sobre' >Sobre</Link>
-        <Link to='/contatos'>Contatos</Link>
+        <Link to='/' >        Home</Link>
+        <Link to='/sobre' >   Sobre</Link>
+        <Link to='/contatos'> Contatos</Link>
 
       </div>
     </header>
