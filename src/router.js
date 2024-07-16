@@ -3,7 +3,7 @@ import Home from './pages/Home';
 import Sobre from './pages/Sobre';
 import Contatos from './pages/Contatos';
 import Header from './components/header';
-import Produtos from './pages/Produtos';
+
 
 
 
@@ -18,7 +18,7 @@ function RoutesApp () {
         <Route path='/' element={ <Home /> } />
         <Route path='/sobre' element={ <Sobre /> } />
         <Route path='/contatos' element={ <Contatos /> }/>  
-        <Route path='/produtos/:id' element={ <Produtos/> } />
+        
        
 
         <Route path='*'  element={ <Erro/> } />     
