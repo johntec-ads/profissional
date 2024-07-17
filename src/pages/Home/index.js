@@ -10,7 +10,7 @@ function Home( ) {
       <Link to='/contatos'>Contatos</Link>
       <br/>     
       <hr/>
-      
+      <Link to='/produto/12345' >Produto123</Link>
      
     </div>
   )
